@@ -1,18 +1,30 @@
 ---
 layout: post
-title:  "Test post"
-date:   2020-01-26 15:49:00 +0100
+title:  "I've started my blog"
+date:   2020-01-26 18:31:00 +0100
 categories: test
 ---
-## This is my test post
+Hello, World! My name is Alfiia, I'm a Junior Data Scientist, and I almost despaired of finding the right platform for my personal blog. First of all, I tried WordPress, the most popular CMS in the world. WP is great: it is not at all demanding for beginners, thousands of plugins and thousands of themes for every taste have been created for it. And everything was fine until I had the idea to run a Python script to text processing directly on my website. And unfortunately such simple solutions as
 
-{% highlight python %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Alfiia')
-#=> prints 'Hi, Alfiia' to STDOUT.
+{% highlight php %}
+
+  <?php
+    $command = escapeshellcmd('/usr/custom/test.py');
+    $output = shell_exec($command);
+    echo $output;
+?>
+}
 {% endhighlight %}
 
-*the end*
+did not work. A more elegant solution was the creation of the REST API, but running the site and API on the same server led to errors, and I had no desire to multiply the number of servers.
+
+The next step was Django. I thought that if I create a website in python, integrating the Python code will be an easy task. But here I was faced with the fact that the development of a blog on Django is not a very popular solution (a moot point, I know), but also not quite simple. In my opinion, this is not a suitable tool for regular blogging, in which the content of the posts remains the main thing, but not the tasks how to insert an image or highlight code beautifully, without using plugins, but by writing code yourself (which is not so bad for python newbies, right?)
+
+But in the end, inspired by [Jeremy Howard’s tweets](https://twitter.com/jeremyphoward/status/1158533609289990144), I decided to blog using Github Pages. It’s worth admitting that I’m a bad coder who wants to become a good Date Scientist, so I wanted to direct my main efforts to Data Analysis, and not Web-development.
+
+And I absolutely agree with him, that personal blog is necessary (perhaps) to every programmer.
+
+“You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.”
+
+[Fast.ai tutorial: Your own hosted blog, the easy, free, open way](https://www.fast.ai/2020/01/20/blog_overview/)
 
