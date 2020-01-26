@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Test post"
+date:   2020-01-26 15:49:00 +0100
+categories: test
+---
+## This is my test post
+
+{% highlight python %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Alfiia')
+#=> prints 'Hi, Alfiia' to STDOUT.
+{% endhighlight %}
+
+*the end*
+
